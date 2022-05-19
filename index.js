@@ -1,8 +1,3 @@
-// 1. Copy and paste this code in your Atlas Realm Function
-// 2. Replace with your send grid key
-// 3. Create a new trigger with "insert" event for your desired collection (ie: emails)
-// 4. Test creating some dynamic template in your send grid account (https://mc.sendgrid.com/dynamic-templates)
-
 const atlasCuster = '<replace_with_your_cluster_name>';
 const sendGridKey = 'replace_with_your_send_grid_key'
 
