@@ -7,6 +7,9 @@ MongoDB trigger to send emails via SENDGRID node API.
 - The easiest way to send one or more emails.
 - Sendgrid use handlebars to render your custom template data into html template.
 
+___
+
+
 1. Copy and paste the ```index.js``` file content to your Atlas Realm Function
 2. Replace with your send grid key
 3. Create a new trigger with "insert" event for your desired collection (ie: emails)
