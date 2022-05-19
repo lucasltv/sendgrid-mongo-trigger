@@ -2,7 +2,7 @@ const atlasCuster = '<replace_with_your_cluster_name>';
 const sendGridKey = 'replace_with_your_send_grid_key'
 
 exports = async function(event){
-  const sendgrid = require('@sendgrid/mail');
+  const sendgrid = require('@sendgrid/mail'); // Realm require that all lib import's must be inside of function context
   sendgrid.setApiKey(sendGridKey);
   const {fullDocument, ns} = event;
   const {templateId, to = [], templateData} = fullDocument;
