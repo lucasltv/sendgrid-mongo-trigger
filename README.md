@@ -5,7 +5,7 @@ MongoDB trigger to send emails via SENDGRID node API.
 - Zero cloud dependency (AWS event bridge, Azure, GCP, etc).
 - Just copy and paste this code in your MongoDB Atlas Trigger.
 - The cheapest way to send emails: sendgrid has a forever free plan.
-- The easiest way to send one or more emails: ```db.inserOne({to:["test@test.com.br", templateId: "<sendgrid_template_id>", templateData: {xpto:1}]})``` (insertMany works too)
+- The easiest way to send one or more emails: ```db.inserOne({to:["test@test.com.br"], templateId: "<sendgrid_template_id>", templateData: {xpto:1}]})``` (insertMany works too)
 - Sendgrid use handlebars to render your custom template data into html template.
 
 1. Copy and paste the ```index.js``` file content to your Atlas Realm Function
